@@ -1,6 +1,6 @@
 # https://rust-lang.github.io/mdBook/format/configuration/renderers.html
 [book]
-title = "Lechev .space"
+title = "🌍 Lechev .space"
 authors = ["Lachezar Lechev"]
 
 language = "en"
@@ -9,6 +9,11 @@ src = "src"
 
 [output.html]
 cname = "lechev.space"
+
+git-repository-url = "https://github.com/lechev-space"
+
+no-section-label = true
+additional-css = ["additional.css"]
 
 [output.html.print]
 enable = false
