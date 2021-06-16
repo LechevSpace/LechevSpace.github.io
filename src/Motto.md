@@ -1,7 +1,7 @@
-# Motto @ Lechev.space
+# Motto @ Lechev .space
 
 ## Why ❓
-# ℹ️ To save our planet 🌍 & excel technology 🧑‍🔬
+# To save our planet 🌍 & excel technology 🧑‍🔬 ❗
 
 ## How ❓
-# ℹ️ By starting a Space company 🚀
+# By an Opened Space 🚀 organization

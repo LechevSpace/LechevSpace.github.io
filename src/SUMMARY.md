@@ -1,3 +1,3 @@
-# Lechev.space
+# Lechev .space
 
 - [Motto](Motto.md)
