@@ -344,13 +344,6 @@ ul#searchresults span.teaser em {
     right: 0;
     padding: 10px 10px;
 }
-
-#copyright {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-}
-
 .sidebar .sidebar-resize-handle {
     position: absolute;
     cursor: col-resize;
