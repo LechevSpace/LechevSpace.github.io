@@ -1,6 +1,6 @@
 # https://rust-lang.github.io/mdBook/format/configuration/renderers.html
 [book]
-title = "🌍 Lechev .space"
+title = "🌍 Lechev.space Ltd"
 authors = ["Lachezar Lechev"]
 
 language = "en"
