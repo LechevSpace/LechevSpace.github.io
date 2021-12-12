@@ -1,11 +1,14 @@
 # https://rust-lang.github.io/mdBook/format/configuration/renderers.html
 [book]
-title = "🌍 Lechev.space Ltd"
+title = "Lechev.space Ltd"
+description = "An open space organization providing services in space exploration, aerospace, robotics, science & technology, environment and quality of life"
 authors = ["Lachezar Lechev"]
 
 language = "en"
 multilingual = false
 src = "src"
+
+base_url = "https://lechev.space"
 
 [output.html]
 cname = "lechev.space"
