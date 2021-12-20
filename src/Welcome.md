@@ -40,5 +40,5 @@ The primary programming language that we use for developing software application
   >
   > _[rust-lang.org](https://rust-lang.org)_
 
-### 📫 Reach us @ 👋 [hi (at) lechev.space](mailto:hi@lechev.space) 
+### 📫 Reach us @ 👋 [hi (at) lechev.space](mailto:hi@lechev.space)
 
