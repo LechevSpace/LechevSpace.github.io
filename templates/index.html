@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{# {% block meta %}
+{{ meta_macros::facebook_meta(url=current_url, title="Welcome!", type="website", description="Welcome to the AeroRust community website!", image=get_url(path="images/aerorust-ferris.png")) }}
+{{ meta_macros::twitter_meta(title="Welcome!", description="Welcome to the AeroRust community website!",
+image=get_url(path="images/aerorust-ferris.png")) }}
+{% endblock %} #}
+
+{% block content %}
+<div class=" about-us-page">
+  <div id="areas-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7500">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#areas-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Software & Hardware development"></button>
+      <button type="button" data-bs-target="#areas-carousel" data-bs-slide-to="1" aria-label="Open Source"></button>
+      <button type="button" data-bs-target="#areas-carousel" data-bs-slide-to="2" aria-label="Research and Development"></button>
+      <button type="button" data-bs-target="#areas-carousel" data-bs-slide-to="3" aria-label="Project & Product planning"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-img d-flex align-items-start align-items-md-center">
+          <img src="{{ get_url(path="images/sf-hw-dark.png") }}" class="img-fluid" width="1600" height="300" alt="Software and Hardware development: Blurred out image of a IDE showing code." />
+        </div>
+        <div class="carousel-caption">
+          <h5>Software and Hardware development</h5>
+          <p class="d-none d-md-block">We handle every aspect of the hardware and software development, from prototype to a certified product.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-img d-flex align-items-start align-items-md-center">
+          <img src="{{ get_url(path="images/open-source.png") }}" class="img-fluid" width="1600" height="300" alt="Open Source: image of a text saying - 'We ♥ and support Open Source'" />
+        </div>
+        <div class="carousel-caption">
+          <h5>Open Source</h5>
+          <p class="d-none d-md-block">We not only develop Open Source but we're also dedicated to grow, support and build the community as professional maintainers.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-img d-flex align-items-start align-items-md-center">
+          <img src="{{ get_url(path="images/research-and-development.png") }}" class="img-fluid" width="1600" height="300" alt="Research and Development: image of a text saying - 'R&D'" />
+        </div>
+        <div class="carousel-caption">
+          <h5>Research and Development</h5>
+          <p class="d-none d-md-block">You have an idea and you want to research and subsequently develop it? Reach out to us! We'll handle both of those aspects for you.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-img d-flex align-items-start align-items-md-center">
+          <img src="{{ get_url(path="images/project-management-dark.png") }}" class="img-fluid" width="1600" height="300" alt="Project & Product planning: Blurred out image of a project management board (Kanban)" />
+        </div>
+        <div class="carousel-caption">
+          <h5>Project and Product planning</h5>
+          <p class="d-none d-md-block">We believe that for a successful product we must work with our clients closely in every step of the process..</p>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#areas-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#areas-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container mt-3">
+    <h2 class="mb-3">Achieve your goals using our space for developments</h2>
+    <p>We are dedicated to help you research and develop the projects you need and to achieve your goals in the following domains:</p>
+
+    <h4>Domains</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+      <div class="col">
+        <div class="card text-bg-dark link-light text-center h-100 w-100 bg-gradient rounded-top-4 border-0">
+          <div class="card-header bg-transparent fs-1 border-0">🛰</div>
+          <div class="card-body">
+            <h5 class="card-title">Space</h5>
+            {# <p class="card-text">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just.</p> #}
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark link-light text-center w-100 h-100 bg-gradient rounded-top-4 border-0">
+          <div class="card-header bg-transparent fs-1 border-0">🛫</div>
+          <div class="card-body">
+            <h5 class="card-title">Aerospace</h5>
+            {# <p class="card-text">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> #}
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark link-light text-center w-100 h-100 bg-gradient rounded-top-4 border-0">
+          <div class="card-header bg-transparent fs-1 border-0">🤖</div>
+          <div class="card-body">
+            <h5 class="card-title">Robotics</h5>
+            {# <p class="card-text">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> #}
+          </div>
+        </div>
+      </div>
+
+    <div class="col">
+      <div class="card text-bg-dark link-light text-center w-100 h-100 bg-gradient rounded-top-4 border-0">
+        <div class="card-header bg-transparent fs-1 border-0">⚛</div>
+        <div class="card-body">
+          <h5 class="card-title">Science and technology</h5>
+          {# <p class="card-text">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> #}
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-bg-dark link-light text-center w-100 h-100 bg-gradient rounded-top-4 border-0">
+        <div class="card-header bg-transparent fs-1 border-0">🌍</div>
+        <div class="card-body">
+          <h5 class="card-title">Environment and quality of life</h5>
+          {# <p class="card-text">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> #}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-3">
+    <h2 class="mb-3">Technology</h2>
+
+    <p>
+      We use a variety of technologies best fitted for the specific domain and use case.
+      The primary programming language that we use for developing software applications is <strong>Rust</strong>.
+    </p>
+
+    <h5>The Rust programming language</h5>
+    
+    <blockquote class="fst-italic fs-3 bg-gray-800 mb-0">
+      A language empowering everyone<br>
+      to build reliable and efficient software.<br>
+      <br>
+      - <a href="{{ config.extra.rustlang_website }}" class="fst-italic">rust-lang.org</a>
+    </blockquote>
+
+  </div>
+  <h3 class="mb-0">📫 Reach us @ 👋 <a href="mailto:{{ config.extra.email }}"> hi (at) lechev.space</a>
+</div>
+{% endblock content %}

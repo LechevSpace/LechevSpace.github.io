@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }}{% endblock title %}
+
+{# {% block meta %}
+{{ meta_macros::facebook_meta(url=current_url, title="Welcome!", type="website", description="Welcome to the AeroRust
+community website!", image=get_url(path="images/aerorust-ferris.png")) }}
+{{ meta_macros::twitter_meta(title="Welcome!", description="Welcome to the AeroRust community website!",
+image=get_url(path="images/aerorust-ferris.png")) }}
+{% endblock %} #}
+
+{% block content %}
+<div class="container">
+    <h1 class="mb-4">About us</h1>
+    <h2 class="mb-3"><i class="bi bi-geo-fill text-danger me-2"></i>Location</h2>
+
+    <p class="mb-1">Headquarters address:</p>
+
+    <blockquote class="fst-italic">
+        Lechev.space Ltd<br>
+
+        59 Osvobozhdenie blvd.,<br>
+        building 172, entrance B,<br>
+        4023 Plovdiv,<br>
+        Bulgaria
+    </blockquote>
+
+    <h5>VAT BG206741467</h5>
+    <p>Company status in <a href="{{ config.extra.bulgarian_registry }}" target="_blank">Registry agency of the Republic of Bulgaria</a></p>
+
+    <h3>📫 Reach us @ 👋 <a href="mailto:{{ config.extra.email }}"> hi (at) lechev.space</a>
+</div>
+{% endblock content %}

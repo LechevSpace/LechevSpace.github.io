@@ -1,0 +1,43 @@
+{% import "macros/meta.html" as meta_macros -%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="description" content="{{ config.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ get_url(path="dist/main.css") }}" rel="stylesheet">
+  <title>{% block title %}{% endblock %} - {{ config.title }}</title>
+
+  <link rel="icon" type="image/x-icon" href="{{ get_url(path="images/favicon-16x16.ico") }}" sizes="16x16">
+  <link rel="icon" type="image/x-icon" href="{{ get_url(path="images/favicon-32x32.ico") }}" sizes="32x32">
+  <link rel="icon" type="image/x-icon" href="{{ get_url(path="images/favicon-96x96.ico") }}" sizes="96x96">
+  
+  <link rel="canonical" href="{{ current_url }}">
+
+  {# Facebook non-required meta tag -#}
+  <meta property="og:site_name" content="Lechev.space Ltd">
+  {% block meta -%}
+    {{ meta_macros::facebook_meta(title="Welcome!", description=config.description, url=current_url) }}
+    {# {{ meta_macros::facebook_meta(title="Welcome!", description=config.description, url=current_url, image=get_url(path="images/aerorust-ferris.png")) }} #}
+    {{ meta_macros::twitter_meta(title="Welcome!", description=config.description) }}
+    {# {{ meta_macros::twitter_meta(title="Welcome!", description=config.description, image=get_url(path="images/aerorust-ferris.png")) }} #}
+  {% endblock -%}
+</head>
+
+<body>
+  <div class="container">
+    {% include "partials/menu.html" -%}
+  </div>
+  <section class="section text-gray-300">
+    {% block content %}{% endblock %}
+  </section>
+
+  <div class="container">
+    {% include "partials/footer.html" %}
+  </div>
+    <script src="{{ get_url(path="dist/bundle.js") }}"></script>
+</body>
+
+</html>

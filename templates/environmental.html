@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }}{% endblock title %}
+
+{# {% block meta %}
+{{ meta_macros::facebook_meta(url=current_url, title="Welcome!", type="website", description="Welcome to the AeroRust
+community website!", image=get_url(path="images/aerorust-ferris.png")) }}
+{{ meta_macros::twitter_meta(title="Welcome!", description="Welcome to the AeroRust community website!",
+image=get_url(path="images/aerorust-ferris.png")) }}
+{% endblock %} #}
+
+{% block content %}
+<div class="container environmental-page">
+
+    <h1>Environmental projects <small class="text-muted">For a better life on Earth 🌍</small></h1>
+
+    <h2>Project Re-Use ♻</h3>
+
+    <p>
+        Check out the <a href="https://www.youtube.com/channel/UCiFcADS0Z6LrVUY-i0WPjcQ">Youtube channel</a>.
+        <br>
+        Both ideas are developed under the Re-use ♻ projects.<br>
+        Re-use ♻ aims to:
+        <ol>
+            <li>Lower CO2 emissions from recycling by reusing.</li>
+            <li>Teach people how to recycle using educational materials and campaigns.</li>
+        </ol>
+
+        Presented at <a href="https://climate-pact.network.europa.eu">Youth Climate Pact Challenge 2021
+            (www.climate-pact.network.europa.eu)</a>.<br>
+
+        The rules for participating with a project:
+    </p>
+    <div class="my-4">
+        <blockquote>
+            Record a video not longer than 90 sec.<br>
+            The project must have a clear focus on one of the 4 categories and climate action:
+            <br><br>
+            <ol>
+                <li>Support for Young Climate Pact Ambassadors.</li>
+                <li>Stepping up individual climate action.</li>
+                <li>Stepping up youth involvement.</li>
+                <li>Education for climate action.</li>
+            </ol>
+        </blockquote>
+    </div>
+    <h3>Re-Use ♻: Wrap Plastic</h3>
+    <h4>Do people recycle plastic correctly?</h4>
+
+    <p>Category: Education for climate action</p>
+
+    <div class="youtube col-md-6 col-12">
+        <iframe src="https://www.youtube-nocookie.com/embed/ArbycdAauUM" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    </div>
+
+    <h3>Re-Use ♻: Glass & Plastic reuse</h3>
+    <h4>Can we reuse all Glass & Plastic?</h4>
+
+    <p>Category: Stepping up individual climate action</p>
+
+    <div class="youtube col-md-6 col-12">
+        <iframe src="https://www.youtube-nocookie.com/embed/Da8Ux71aMEk" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    </div>
+
+
+</div>
+{% endblock content %}
