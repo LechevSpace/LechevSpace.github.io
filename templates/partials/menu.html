@@ -1,0 +1,42 @@
+<header class="my-2">
+    <nav class="navbar navbar-expand-md navbar-dark py-0" aria-label="Menu">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <a href="{{ get_url(path="@/_index.md") }}"
+                    class="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-white text-decoration-none">
+                    <img class="logo me-2" height="50" src="{{ get_url(path="images/logo_120x120.png") }}" />
+                </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a href="{{ get_url(path="@/_index.md") }}" class="nav-link {% if get_url(path="@/_index.md")
+                            | as_str==current_url %}active{% endif %}" {% if get_url(path="@/_index.md" ) |
+                            as_str==current_url %}aria-current="page" {% endif %}>Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="projects-dropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="projects-dropdown">
+                            <li><a class="dropdown-item" href="{{ config.extra.github_org }}">Open source <i class="ms-2 bi bi-box-arrow-up-right"></i></a></li>
+                            <li><a class="dropdown-item disabled">Aerospace (coming soon)</a></li>
+                            <li><a class="dropdown-item{% if get_url(path="@/projects/environmental.md") | as_str==current_url %} active{% endif %}"
+                                href="{{ get_url(path="@/projects/environmental.md") }}">Environmental</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ config.extra.github_services }}" target="_blank">Services<i class="ms-2 bi bi-box-arrow-up-right"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link{% if get_url(path="@/about_us.md") | as_str==current_url %} active{% endif %}"  href="{{ get_url(path="@/about_us.md") }}">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

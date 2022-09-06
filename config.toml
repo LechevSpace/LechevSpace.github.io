@@ -1,0 +1,27 @@
+# The URL the site will be built for
+base_url = "https://lechev.space"
+
+title = "Lechev.space"
+description = "An open space organization providing services in space exploration, aerospace, robotics, science & technology, environment and quality of life"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+# Put all your custom variables here
+github_repo = "https://github.com/LechevSpace/LechevSpace.github.io"
+github_org = "https://github.com/LechevSpace"
+rustlang_website = "https://rust-lang.org"
+twitter_username = "@LechevSpace"
+twitter_url = "https://twitter.com/LechevSpace"
+email = "hi@lechev.space"
+github_services = "https://github.com/sponsors/LechevSpace?frequency=one-time"
+bulgarian_registry = "https://portal.registryagency.bg/CR/en/Reports/ActiveConditionTabResult?uic=206741467"

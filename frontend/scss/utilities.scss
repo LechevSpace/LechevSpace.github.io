@@ -1,0 +1,17 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "rounded-top": map-merge(
+      map-get($utilities, "rounded-top"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "rounded-top"), "values"),
+          (
+            4: $border-radius-xl,
+            5: $border-radius-2xl,
+          ),
+        ),
+      ),
+    ),
+  )
+);
