@@ -2,12 +2,11 @@
 
 {% block title %}{{ page.title }}{% endblock title %}
 
-{# {% block meta %}
-{{ meta_macros::facebook_meta(url=current_url, title="Welcome!", type="website", description="Welcome to the AeroRust
-community website!", image=get_url(path="images/aerorust-ferris.png")) }}
-{{ meta_macros::twitter_meta(title="Welcome!", description="Welcome to the AeroRust community website!",
-image=get_url(path="images/aerorust-ferris.png")) }}
-{% endblock %} #}
+{% block meta %}
+{% set meta_title = page.title ~ " - " ~ config.title -%}
+{{ meta_macros::facebook_meta(url=current_url, title=meta_title, type="website", description=page.description) }}
+{{ meta_macros::twitter_meta(title=meta_title, description=page.description) }}
+{% endblock %}
 
 {% block content %}
 <div class="container environmental-page">

@@ -13,25 +13,25 @@
             <div class="collapse navbar-collapse" id="navbarToggle">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a href="{{ get_url(path="@/_index.md") }}" class="nav-link {% if get_url(path="@/_index.md")
-                            | as_str==current_url %}active{% endif %}" {% if get_url(path="@/_index.md" ) |
+                        <a href="{{ get_url(path="@/_index.md") }}" class="nav-link{% if get_url(path="@/_index.md")
+                            | as_str==current_url %} active{% endif %}" {% if get_url(path="@/_index.md" ) |
                             as_str==current_url %}aria-current="page" {% endif %}>Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="projects-dropdown" data-bs-toggle="dropdown"
                             aria-expanded="false">Projects</a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="projects-dropdown">
-                            <li><a class="dropdown-item" href="{{ config.extra.github_org }}">Open source <i class="ms-2 bi bi-box-arrow-up-right"></i></a></li>
+                            <li><a class="dropdown-item" href="{{ config.extra.github_org | safe }}" target="_blank">Open source <i class="ms-2 bi bi-box-arrow-up-right"></i></a></li>
                             <li><a class="dropdown-item disabled">Aerospace (coming soon)</a></li>
                             <li><a class="dropdown-item{% if get_url(path="@/projects/environmental.md") | as_str==current_url %} active{% endif %}"
                                 href="{{ get_url(path="@/projects/environmental.md") }}">Environmental</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ config.extra.github_services }}" target="_blank">Services<i class="ms-2 bi bi-box-arrow-up-right"></i></a>
+                        <a class="nav-link" href="{{ config.extra.github_services | safe }}" target="_blank">Services<i class="ms-2 bi bi-box-arrow-up-right"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link{% if get_url(path="@/about_us.md") | as_str==current_url %} active{% endif %}"  href="{{ get_url(path="@/about_us.md") }}">About us</a>
+                        <a class="nav-link{% if get_url(path="@/about_us.md") | as_str==current_url %} active{% endif %}" href="{{ get_url(path="@/about_us.md") }}">About us</a>
                     </li>
                 </ul>
             </div>

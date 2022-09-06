@@ -14,15 +14,13 @@
   <link rel="icon" type="image/x-icon" href="{{ get_url(path="images/favicon-32x32.ico") }}" sizes="32x32">
   <link rel="icon" type="image/x-icon" href="{{ get_url(path="images/favicon-96x96.ico") }}" sizes="96x96">
   
-  <link rel="canonical" href="{{ current_url }}">
+  <link rel="canonical" href="{{ current_url | safe }}">
 
   {# Facebook non-required meta tag -#}
   <meta property="og:site_name" content="Lechev.space Ltd">
   {% block meta -%}
-    {{ meta_macros::facebook_meta(title="Welcome!", description=config.description, url=current_url) }}
-    {# {{ meta_macros::facebook_meta(title="Welcome!", description=config.description, url=current_url, image=get_url(path="images/aerorust-ferris.png")) }} #}
-    {{ meta_macros::twitter_meta(title="Welcome!", description=config.description) }}
-    {# {{ meta_macros::twitter_meta(title="Welcome!", description=config.description, image=get_url(path="images/aerorust-ferris.png")) }} #}
+    {{ meta_macros::facebook_meta(title="Welcome to Lechev.space", description=config.description, url=current_url) }}
+    {{ meta_macros::twitter_meta(title="Welcome to Lechev.space", description=config.description) }}
   {% endblock -%}
 </head>
 

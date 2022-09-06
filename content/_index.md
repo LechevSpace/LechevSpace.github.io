@@ -1,4 +1,4 @@
 +++
-title = "Lechev.space"
+title = "Home"
 template = "index.html"
 +++

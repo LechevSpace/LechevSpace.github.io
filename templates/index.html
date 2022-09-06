@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock title %}
+{% block title %}{{ section.title }}{% endblock title %}
 
-{# {% block meta %}
-{{ meta_macros::facebook_meta(url=current_url, title="Welcome!", type="website", description="Welcome to the AeroRust community website!", image=get_url(path="images/aerorust-ferris.png")) }}
-{{ meta_macros::twitter_meta(title="Welcome!", description="Welcome to the AeroRust community website!",
-image=get_url(path="images/aerorust-ferris.png")) }}
-{% endblock %} #}
+{% block meta %}
+{% set meta_title = section.title ~ " - " ~ config.title -%}
+{{ meta_macros::facebook_meta(url=current_url, title=meta_title, type="website", description=config.description) }}
+{{ meta_macros::twitter_meta(title=meta_title, description=config.description) }}
+{% endblock %}
 
 {% block content %}
 <div class=" about-us-page">
@@ -138,7 +138,7 @@ image=get_url(path="images/aerorust-ferris.png")) }}
       A language empowering everyone<br>
       to build reliable and efficient software.<br>
       <br>
-      - <a href="{{ config.extra.rustlang_website }}" class="fst-italic">rust-lang.org</a>
+      - <a href="{{ config.extra.rustlang_website | safe }}" class="fst-italic">rust-lang.org</a>
     </blockquote>
 
   </div>
