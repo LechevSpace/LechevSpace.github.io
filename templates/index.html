@@ -4,8 +4,8 @@
 
 {% block meta %}
 {% set meta_title = section.title ~ " - " ~ config.title -%}
-{{ meta_macros::facebook_meta(url=current_url, title=meta_title, type="website", description=config.description) }}
-{{ meta_macros::twitter_meta(title=meta_title, description=config.description) }}
+{{ meta_macros::facebook_meta(url=current_url, title=meta_title, type="website", description=config.description, image=get_url(path="images/home_twitter_card.png")) }}
+{{ meta_macros::twitter_meta(title=meta_title, description=config.description, image=get_url(path="images/home_twitter_card.png")) }}
 {% endblock %}
 
 {% block content %}

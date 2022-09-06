@@ -25,9 +25,9 @@
     <meta name="twitter:description" content="{{ description }}">
 {% endif -%}
 {% if image != "" -%}
-    <meta name="twitter:image" content=" {{ image | safe }}">
+    <meta name="twitter:image" content="{{ image | safe }}">
 {% if image_alt != "" -%}
-    <meta name="twitter:image" content=" {{ image | safe }}">
+    <meta name="twitter:image:alt" content="{{ image_alt }}">
 {% endif -%}
 {% endif -%}
     <meta name="twitter:card" content="{{ card }}">
